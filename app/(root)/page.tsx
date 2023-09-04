@@ -1,11 +1,21 @@
-import { Button } from '@/components/ui/button'
-import Image from 'next/image'
+"use client"
+import { Modal } from "@/components/ui/modal";
+import { useStoreModal } from "@/hooks/use-store-modal";
+import { UserButton } from "@clerk/nextjs";
 
-export default function Home() {
+
+
+const Setuppage=()=> {
+const storemodal=useStoreModal();
   return (
-  <div className=' p-4'>
 
-    <Button >shadcn </Button>
-  </div>
+
+<div>
+    Root page
+</div>
+
+
+  
   )
 }
+export default Setuppage
